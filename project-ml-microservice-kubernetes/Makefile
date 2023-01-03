@@ -12,8 +12,10 @@ setup:
 
 install:
 	# This should be run from inside a virtualenv
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip install --upgrade pip && \
+    	pip install --upgrade wheel && \
+    		pip install --upgrade setuptools && \
+				pip install -U -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here
